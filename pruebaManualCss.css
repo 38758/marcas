@@ -1,0 +1,198 @@
+  /*Comentario de CSS*/
+  html {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+
+  /*Alineación de texto justificado*/
+  a {
+    color: #fff;
+  }
+
+  /*Definimos el color de todos los enlaces*/
+  a:hover {
+    color: #F90;
+    cursor: pointer;
+  }
+
+  /*Enlace cuando el visitante pone el cursor encima*/
+  a:link:active {
+    background-color: rgb(1, 255, 4);
+  }
+
+  /*Aquí se define que, cuando el usuario, pulse el link, el color de fondo cambie al color elegido arriba.*/
+  body {
+    background-color: rgb(71, 124, 15);
+    padding: 5em;
+    border-color: white;
+    margin-right: 15%;
+  }
+
+  .gototop {
+    position: fixed;
+  }
+
+  /*Esto es un estilo de fuente, en el que todos los elementos del documento de html, estarán con este tipo de letra.*/
+  /*Aquí se declara el fondo del documento con números rgb, del 0 al 255, con una distancia de bordes de 5em por cada lado del documento.*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*A continuación defino que los headings, tendrán un color de letra, un tamaño normal, y una posibilidad de letras, arial, helvetica o sans-serif
+  */
+  h1 {
+    color: rgb(250, 255, 0);
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  h2 {
+    color: rgb(250, 255, 0);
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  h3 {
+    color: rgb(250, 255, 0);
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  h4 {
+    color: rgb(250, 255, 0);
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  h5 {
+    color: rgb(250, 255, 0);
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  h6 {
+    color: rgb(250, 255, 0);
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  p span {
+    color: red;
+  }
+
+  dd span {
+    color: red;
+  }
+
+  /*Los elementos span contenidos en los párrafos,dd, serán de color rojo.*/
+  dt.ul_li_dl_dt {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(13, 185, 207);
+  }
+
+  /*Aquí se establece que, el contenido de los elementos dt, definidos como clases ul_li_dl_dt, sean con un estilo oblique, en bold, y un
+tamaño de 2em.*/
+  li.ul_li {
+    font-family: helvetica, Times, monospace;
+    font-size: 1em;
+  }
+
+  dt.ol_li_dl_dt {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(246, 34, 127);
+  }
+
+  dt.ol_ul_li_dl_dt {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(251, 76, 49);
+  }
+
+  /*Aquí se establece que, el contenido de los elementos li, definidos como clases ul_li, sean con un tipo de letra monospace y un tamaño
+  de 1em.*/
+  a:link:active {
+    background-color: green;
+    /*Aquí va un cambio del link, cuando el usuario clickee en el link, el fondo cambiará de color a verde*/
+  }
+
+  p.unorderedList span {
+    font-family: cursive;
+  }
+
+  #textoPreformatted {
+    font-size: 2em;
+  }
+
+  #Primer_link {
+    font-size: 2em;
+  }
+
+  #gototop {
+    position: fixed;
+    top: 25px;
+    right: 1em;
+    font-size: 2em;
+    font-family: Arial Black;
+  }
+
+  span p {
+    font-family: sans-serif;
+  }
+
+  /*columnas*/
+  .row {
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .cl1, .cl2, .cl3, .cl4, .cl5, .cl6, .cl7, .cl8, .cl9, .cl10, .cl11, .cl12 {
+      border: 1px solid green;
+      display: block;
+      clear: :both;
+      width: 100%;
+    }
+
+    body {
+      padding: 2%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: :200px;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    #textoPreformatted {
+      width: 100%;
+      overflow: scroll;
+      font-size: 0.7em;
+    }
+
+    .pc {
+      display: none;
+    }
+
+    .movil {
+      display: block;
+    }
+
+    dt.ul_li_dl_dt {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (min-width:640px)and(max-width: 799px) {
+    .cm1, .cm2, .cm3, .cm4, .cm5, .cm6, .cm7, .cm8, .cm9, .cm10, .cm11, .cm12 {
+      float: left;
+      border: 1px solid green;
+    }
+  }

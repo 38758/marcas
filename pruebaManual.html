@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Esto es un comentario en Html-->
+<!--Y aquí comienza el encabezado-->
+
+<head>
+  <meta charset="utf-8">
+  <!--Codificación-->
+  <meta name="author" content="David Callén Peruga">
+  <link type="text/css" rel=" stylesheet " href="pruebaManualCss.css">
+  <!-- meta responsiva -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <!--Esto es el enlace al Css correspondiente a este html.-->
+  <title>Manual HTML</title>
+</head>
+<!--...y aquí termina;)-->
+<!--Aquí comienza el cuerpo-->
+
+<body>
+  <!--<div class="map">
+   <ul>
+    <li id="p1"><a href="#HTML">1. HTML</a>
+
+    </li><li id="p2"><a href="#colors">2. Añadir color</a>
+
+    </li><li id="p3"><a href="#fonts">3. Añadir tipo de letra</a>
+
+    </li><li id="p4"><a href="#navbar">4. Barra de navegación</a>
+
+    </li><li id="p10"><a href="#links">5. Dar estilo a los enlaces</a>
+
+    </li><li id="p6"><a href="#rule">6. Línea horizontal</a>
+
+    </li><li id="p9"><a href="#external">7. CSS externa</a>
+
+    </li><li id="p5"><a href="#reading">Más información</a>
+   </li></ul>
+ </div>-->
+  <h1>Manual Básico de <em>HTML</em></h1>
+  <nav id="tabla_contenido">
+    <div>
+      <ol>
+        <li>
+          <a href="#textoPreformatted">Texto preformateado</a>
+        </li>
+        <li>
+          <a href="#Primer_link">Primer_link</a>
+        </li>
+        <li>
+          <a href="#Encabezado">Lista de contenidos</a>
+        </li>
+        <li>
+          <a href="#contenido">Otros elementos</a>
+        </li>
+        <li>
+          <a href="#formulario_def">Elementos de control</a>
+        </li>
+        <li>
+          <a href="#Multimedia">Elementos multimedia</a>
+        </li>
+        <li>
+          <a href="#ejemplo">Ejemplo formulario</a>
+        </li>
+        <li>
+          <a href="#ejemplo_text_area">Más...</a>
+        </li>
+        <li>
+        <a href="#sexos">Ejemplo opciones predefinidas</a>
+       </li>
+       <li>
+         <a href="#ejemplo_iframe">Ejemplo iframe</a>
+       </li>
+       <li>
+         <a href="#ejemplo_video">Ejemplo video</a>
+       </li>
+      </ol>
+    </div>
+  </nav>
+  <!--Este es el primer título del cuerpo, no confundir con el elemento title-->
+  <h2><em>Html</em></h2>
+  <pre id="textoPreformatted">
+    <p>¡Hey mira! Esto es un texto preformateado, quiere decir...
+      ¡Eso es! que tal y como lo escribas, así se representará en el navegador.
+a
+  q
+    u
+      í
+        e
+          s
+            t
+              á
+                l
+                  a
+                    p
+                      r
+                        u
+                          e
+                            b
+                              a
+    </p>
+  </pre>
+  <p>
+    <!--Ey, mira! este es el primer párrafo :)-->
+    En este manual hablaré sobre algunos de los elementos básicos que contiene un documento html, comenzando con algunos elementos básicos
+    como los headings, los paragraphs, o los links, y definiré brevemente otros elementos que componen el documento. El documento html, para
+    ser un documento html, debe contener <strong>obligatoriamente</strong> los siguientes elementos:<br>
+    <strong>Nota:</strong> Todos los elementos comienzan con&lt;...&gt; y se cerrarán con &lt;/...&gt;
+    <!--He introducido los span para poder representar las etiquetas.-->
+  </p>
+  <a href="https://www.w3schools.com" id="Primer_link">¿Is this a link?.</a>
+  <!--Este es el enlace en el que me he apoyado para reforzar este manual, a parte de los pdf compartidos.-->
+  <p> Esto es un enlace a otra página web. Una pequeña ayuda interactiva para documentarse acerca de algunos
+    lenguajes, entre ellos CSS, HTML, XML etc.</p>
+  <img src="circulos.gif" alt="Círculos de colores">
+  <p>
+    ¡Eh mira! aquí tenemos un elemento nuevo, este elemento se llama <span>&lt;ul&gt;</span>, que quiere decir unordered list lista desordenada.
+    Lo que contiene anidado en él es... el elemento <span>&lt;li&gt;</span>, que define que, dentro de la lista desordenada
+    existe nuestro primer elemento de la lista. Como vamos a definir una serie de elementos es necesario utilizar los elementos dl, y dt.
+  </p>
+  <!--Aquí tenemos una imagen, que bien podemos obtenerla de internet, o también podemos importarla de nuestro src y si no quieres hacer todo
+  el path desde tu C:/o D:/ puedes coger ése archivo png, pnej,jpg,jpeg o gif a tu carpeta de trabajo "workspace".-->
+  <ul id="Encabezado">
+    <!--Ya has llegado a esta "maravillosa" parte del documento.-->
+    <li class="ul_li">
+      <dl class="ul_li_dl">
+        <dt class="ul_li_dl_dt">
+          Elemento doctype.
+        </dt>
+        <dd>Este elemento <span>&lt;doctype&gt;</span> es especialmente importante, por que define que el documento esta bajo el estandar de HTML 5.</dd>
+      </dl>
+    </li>
+    <li class="ul_li">
+      <dl class="ul_li_dl">
+        <dt class="ul_li_dl_dt">
+          Elemento html
+        </dt>
+        <dd>
+          Este elemento representa la raíz de un documento <span>&lt;html&gt;</span> o XHTML. Todos los demás elementos deben ser descendientes de
+          este elemento.
+        </dd>
+      </dl>
+    </li>
+    <li class="ul_li">
+      <dl class="ul_li_dl">
+        <dt class="ul_li_dl_dt">
+          Elemento head
+        </dt>
+        <dd>
+          Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.
+        </dd>
+      </dl>
+    </li>
+    <li class="ul_li">
+      <dl class="ul_li_dl">
+        <dt class="ul_li_dl_dt">
+          Elemento body
+        </dt>
+        <dd>
+          Representa el contenido de un documento <strong>HTML</strong>. Solo puede haber un elemento body en un documento.
+        </dd>
+      </dl>
+    </li>
+    <p>Aquí es donde cualquiera puede empezar a dar sus primeros pasitos...aunque si te parece, puedes seguir probando tú mismo en la página
+      de w3schools.<a href="https://www.w3schools.com" title="w3schools">AQUI</a></p>
+    <ul id="contenido">
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento title
+          </dt>
+          <dd>Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente
+            puede contener texto o números y cualquier otra etiqueta contenida no será interpretada.</dd>
+        </dl>
+      </li>
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento meta
+          </dt>
+          <dd>Define los metadatos que no pueden ser definidos usando otro elemento HTML.</dd>
+        </dl>
+      </li>
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento br
+          </dt>
+          <dd>Representa un cambio temático entre elementos a nivel de párrafo, por ejemplo: un cambio de escena en una historia o un cambio
+            de tema dentro de una sección.</dd>
+        </dl>
+      </li>
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento span
+          </dt>
+          <dd>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.</dd>
+        </dl>
+      </li>
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento p
+          </dt>
+          <dd>Si queremos especificar que se trata de un párrafo, podríamos encerrar el texto con la etiqueta de párrafo <span>&lt;p&gt;</span>
+          </dd>
+        </dl>
+      </li>
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento a
+          </dt>
+          <dd>El elemento a crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo,
+            o cualquier otra URL.</dd>
+        </dl>
+      </li>
+      <li class="ul_li">
+        <dl class="ul_li_dl">
+          <dt class="ul_li_dl_dt">
+            Elemento img
+          </dt>
+          <dd>Define una imagen en una página HTMLLas imágenes no se insertan técnicamente en una página HTML, las imágenes están vinculadas a
+            páginas HTML. La etiqueta <span>&lt;img&gt;</span> crea un espacio de retención para la imagen referenciada..</dd>
+        </dl>
+      </li>
+    </ul>
+  </ul>
+  <p>
+    Esta lista desordenada contiene elementos <span>&lt;li&gt;</span>, que a su vez contiene elementos <span> &lt;dl&gt;</span>, que a
+    su vez contiene elementos <span>&lt;dt&gt;</span>, que son definidos por el elemento <span>&lt;dd&gt;</span>.
+  </p>
+  <p>A continuación viene un elemento nuevo, el elemento<span>&lt;ol&gt;</span>, funciona de la misma manera que el anterior elemento, solo que
+    esta lista, está ordenada, además de que le puedo decir el orden en el que quiero que comience con los atributos <span>&lt;type&gt;</span>
+    y <span>&lt;reversed&gt;</span>.</p>
+  <ol type="A" id="formulario_def">
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento form
+        </dt>
+        <dd>El elemento <span>&lt;form&gt;</span> se usa para crear un formulario HTML para la entrada del usuario. El HTML de un formulario web
+          está compuesto por uno o más controles de formulario, además de algunos elementos adicionales que ayudan a estructurar el formulario
+          general; a menudo se los conoce como formularios HTML. Los controles pueden ser campos de texto de una o varias líneas, cajas desplegables,
+          botones, casillas de verificación o botones de opción, y se crean principalmente con el elemento
+          <span> &lt;input&gt;</span>.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento input
+        </dt>
+        <dd>Se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que
+          <span>&lt;input&gt;</span> funciona varía considerablemente dependiendo del valor de su atributo <span>&lt;type&gt;</span>.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento label
+        </dt>
+        <dd>El elemento <span>&lt;label&gt;</span> representa una etiqueta para un elemento en una interfaz de usuario. Este puede estar asociado
+          con un control mediante la utilizacion ubicando el control dentro del elemento <span>&lt;label&gt;</span>. </dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento select
+        </dt>
+        <dd>Representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos<span>
+            &lt;option&gt;</span>.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento option
+        </dt>
+        <dd>La etiqueta <span>&lt;option&gt;</span> define una opción en una lista de selección o <span>&lt;datalist&gt;</span> y mostrando su
+          contenido mediante su atributo <span>&lt;value&gt;</span>.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento textarea
+        </dt>
+        <dd>La etiqueta <span>&lt;textarea&gt;</span> define un control de entrada de texto de varias líneas mediante sus atributos <span>
+            &lt;rows&gt;</span> y <span>&lt;col&gt;</span>.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento input
+        </dt>
+        <dd>El elemento <span>&lt;input&gt;</span> se usa para crear controles interactivos para formularios basados en la web, que reciban
+          datos del usuario. La forma en que <span>&lt;input&gt;</span> funciona varía considerablemente dependiendo del valor de su atributo
+          <span>&lt;type&gt;</span>.</dd>
+      </dl>
+    </li>
+    <ul>
+      <li class="ol_ul_li">
+        <dl class="ol_ul_li_dl">
+          <dt class="ol_ul_li_dl_dt">
+            Type
+          </dt>
+          <dd>El tipo de control a mostrar. Su valor predeterminado es "text", si no se especifica este atributo. Los posibles valores son:
+            button, checkbox, color, date, datetimelocal, email, file, hidden, image, month, number, password, radio, range, reset, search,
+            submit, tel, text, time, url,week,</dd>
+        </dl>
+      </li>
+    </ul>
+    <li class="ol_li" id="Multimedia">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento Iframe
+        </dt>
+        <dd>Representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML en la página actual.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento audio
+        </dt>
+        <dd>Especifica una forma estándar de incrustar audio en una página weba, y para poder usar los elementos de control, deberemos
+          utilizar el atributo controls.</dd>
+      </dl>
+    </li>
+    <li class="ol_li">
+      <dl class="ol_li_dl">
+        <dt class="ol_li_dl_dt">
+          Elemento video
+        </dt>
+        <dd>Se utiliza para incrustar vídeos en un documento HTML o XHTML.</dd>
+      </dl>
+    </li>
+  </ol>
+  <h2>Título de texto de segundo nivel</h2>
+  <p> Esto es el elemento form.
+    <form id="ejemplo" action="pruebaManual.html" ?Nombre=&Email="38758@iessierradeguara.com">
+      <p>
+        Nombre: <input type="text" name="nombre" value="" size="25" maxlength=50> Este elemento se llama <span>&lt;input&gt;</span>, es de
+        tipo texto, y es de un tamaño máximo de 50 caracteres.<br> Aquí va el nombre del usuario.
+        <!--Esto es un formulario que tiene atributos como text, que define que la entrada es de tipo texto,de tamaño
+        por defecto 25 y de máximo de longitud de entrada de carácteres 50-->
+      </p>
+      <p>
+        E-mail: <input type="text" name="Email" value="" size="25" maxlength="50"> Aquí va el correo de ése nombre
+        <!--Esto es una entrada parecida a la anterior, solo que que ésta se llama email, y -->
+      </p>
+      <p>
+        <input type="submit" name="Eniar" value="Enviar"> Este elemento es un botón que envia el formulario.
+        <!--Esto es un formulario, en el que hay dos campos
+        de entrada de tipo texto, y su respectivo botón de enviar formulario-->
+      </p>
+      <p>
+        Aquí va el formulario.
+      </p>
+      <p>
+        <input type="number" min="0" max="100" step="20" value="50" name="valor"> Este es un campo de entrada numérica establiecido de
+        0 a 100, en el que el valor por defecto será 50.
+      </p>
+      <p>
+        <input type="checkbox" name="c1" checked> c1
+        <!--Aquí se establece una casilla de verificación que por defecto, al comienzo está
+        marcado-->
+      </p>
+      <p>
+        <input type="checkbox" name="c2"> c2
+      </p>
+      <p>
+        <input type="checkbox" name="c3"> c3
+      </p>
+      <p>
+        <input type="radio" name="radio" value="uno" checked>Opción Uno
+        <!--Esto es parecido a la anterior casilla, solo que en estas sólo puedes
+        marcar una de las que aparecen aquí.-->
+      </p>
+      <p>
+        <input type="radio" name="radio" value="dos">Opción Dos
+      </p>
+      <p>
+        <input type="radio" name="radio" value="tres">Opción Tres
+      </p>
+      <select name="Menú">
+        <option value="uno">Uno</option>
+        <option value="dos">Dos</option>
+        <option value="tres">Tres</option>
+      </select>
+      <select name="menum" size="3" multiple>
+        <option value="uno">Uno</option>
+        <option value="dos">Dos</option>
+        <option value="tres">Tres</option>
+        <option selected value="cuatro">Cuatro</option>
+        <option value="cinco">Cinco</option>
+      </select>
+      <p>Esto son dos tipos de menú distintos.</p>
+    </form>
+    <hr>
+  </p>
+  <h2>
+    Título de texto de segundo nivel 2
+  </h2>
+  <p>
+    Aqui va un texto, en un cuadro de texto.Controles de entrada
+  </p>
+  <textarea id="ejemplo_text_area" name="texto_largo" rows="6" cols="20">
+    Este texto  está  contenido en  el cuadro del editor.Y puedes escribir lo que quieras
+  </textarea>
+  <p>
+    Esto es una entrada de datos predefinida en la que hay que elegir qué es lo que quieres dentro.
+  </p>
+  <input id="sexos" name="sexo" list="sexos">
+  <datalist>
+    <option value="mujer"></option>
+    <option value="hombre"></option>
+    <option value="cosa"></option>
+  </datalist>
+  <p>
+    Esto es un elemento datalist, un desplegable, con varias opciones a elegir una de ellas.
+  </p>
+  <input type="password" name="Contraseña" value="">
+  <p>
+    Esto es una entrada de tipo contraseña, viaje en claro...
+  </p>
+  <input type="search" name="" value="">
+  <p>
+    Esto es una entrada de tipo búsqueda
+  </p>
+  <input type="tel" name="Teléfono" value="">
+  <p>
+    Introduce tu telefono
+  </p>
+  <input type="url" name="" value="">
+  <p>
+    Introduce una url
+  </p>
+  <input type="range" name="control deslizante" min="1" max="50" step="2" value="">
+  <p>
+    Esto es una control deslizante, comprendido en valores numéricos establecidos entre 1 y 50.
+  </p>
+  <!--Control deslizante-->
+  <input type="hidden" name="Escondido" value="">
+  <p>
+    Este elemento esta escondido
+  </p>
+  <!---->
+  <input type="image" alt="Image Dahaka" src="Dahaka.jpg" name="Dahaka" width="200" height="100">
+  <p>
+    Esto es una imagen que actua como si fuera un boton
+  </p>
+  <input type="file" accept="image/gif,image/x-jpg">
+  <p>
+    Desde este boton puedes elegir tu archivo gif o jpg o png...
+  </p>
+  <input type="button" name="botón" value="Pulsa aquí">
+  <p>
+    Esto es un boton
+  </p>
+  <input type="reset" name="resetea valores por defecto" value="Reset">
+  <p>
+    Reestablece el contenido del formulario a los valores por defecto...No es recomendable
+  </p>
+  <input type="date" min="1" max="31" step="1" name="" value="2020-02-12">
+  <p>
+    Esto es una entrada de fecha, puedes seleccionarla desde el desplegable, y aparecerá un calendario
+  </p>
+  <input type="color" name="pick-a-color" value="">
+  <p>
+    Escoge un color
+  </p>
+  <button type="submit" value="submit" name="Submit">
+    Enviar
+    <img src="circulos.gif" alt="Enviar">
+  </button>
+  <p>
+    He puesto a este botón una imagen que envía el contenido del formulario rellenado
+  </p>
+  <iframe id="ejemplo_iframe" src="https://www.minijuegos.com" height="500" width="900"></iframe>
+  <p>
+    Esto es un elemento iframe, es otra pagina web que está incrustada en esta.
+  </p>
+  <h3>Título de texto de tercer nivel</h3>
+  <video id="ejemplo_video" controls src="buxbunni.mp4" autoplay>
+    Lo siento, tu navegador no soporta este video:(
+  </video>
+  <p>
+    Aquí he introducido, mediante el elemento video, un archivo multimedia controlable.<br>
+    Si pinchas aquí abajo, observa lo que ocurre...
+  </p>
+  <a href="#textoPreformatted">go</a>
+  <p>
+    Si lo has hecho, habrás visto que te ha llevado hasta un punto en concreto del documento, pues bien, ese punto se llama un punto de anclaje.
+    Este punto de anclaje se puede definir con el elemento <span>&lt;a&gt;</span>y su atributo <span>href</span>. Pues bien, en el
+    atributo le introduces el carácter <span> <i><strong>#</strong></i></span> y a continuación le sigue el <span>id</span>,  al que le hayas definido ese elemento. En este
+    caso es textoPreformatted.
+  </p>
+  <div id="gototop">
+    <a href="#top"> &uarr; </a>
+    <!--s-->
+  </div>
+  <div class="row">
+    <div class="cl3 cm6">
+      <p>Item1</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item2 Esto es guay</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item3</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item4</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item5</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item6</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item7</p>
+    </div>
+    <div class="cl3 cm6">
+      <p>Item8</p>
+    </div>
+  </div>
+  <h4>Título de texto de cuarto nivel</h4>
+  <p class="pc">Esto son elementos div, que han sido organizados en css, como una tabla.</p>
+  <p class="movil">En tamaños pequeños el formato tabla descuadra, así que lo hemos convertido en block</p>
+  <h5>Título de texto de quinto nivel</h5>
+  <h6>Título de texto de sexto y último nivel</h6>
+</body>
+<!--... y por fin... Aquí se termina.-->
+
+</html>
